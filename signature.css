@@ -1,0 +1,269 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.one h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.one h1:after {
+  width: 100px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #00b853;
+}
+
+.canvas-container {
+  margin-bottom: 20px;
+  background-color: #eef0f1;
+  border-radius: 36px 36px 36px 36px;
+}
+
+canvas {
+  border: 0px solid #000;
+  border-radius: 36px 36px 36px 36px;
+  -moz-border-radius: 36px 36px 36px 36px;
+  -webkit-border-radius: 36px 36px 36px 36px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: auto;
+  padding: 0px 40px 0px 40px;
+  gap: 25px;
+  background-color: #eef0f1;
+  border-radius: 80px 80px 80px 80px;
+}
+.option-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.option-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option-6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option-7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  margin-right: 10px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  :hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+      0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+    transform: translateY(-2px);
+  }
+  :active {
+    box-shadow: inset 0px 3px 7px #3c4fe0;
+    transform: translateY(2px);
+  }
+}
+
+.button-row button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  margin: 0 5px;
+  border-radius: 6px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%),
+    inset 0px -3px 0px rgb(58 65 111 / 50%);
+}
+label {
+  font-weight: bold;
+  display: block;
+  float: left;
+  padding-right: 5px;
+  color: #5a5757;
+}
+label:after {
+  content: ": ";
+}
+
+/* Style the checkbox */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative; /* Ensure positioning for pseudo-element */
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+/* Style the tick mark when checkbox is checked */
+input[type="checkbox"]:checked::before {
+  content: "\2022"; /* Unicode for tick mark */
+  font-size: 40px; /* Increase the size of the tick mark */
+  line-height: 1; /* Ensure vertical alignment */
+  position: absolute; /* Position the tick mark */
+  top: 50%; /* Adjust vertical positioning */
+  left: 50%; /* Adjust horizontal positioning */
+  transform: translate(-50%, -50%); /* Center the tick mark */
+  color: #02274e; /* Color of the tick mark */
+}
+
+/* Adjust cursor for checkbox label */
+label[for="transparentBg"] {
+  cursor: default; /* Set cursor to default for the checkbox label */
+}
+
+/* Style the label for the checkbox */
+label[for="transparentBg"] {
+  margin-top: 10px;
+}
+
+/* Style the select dropdown */
+select {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* Style the download button */
+.download-button {
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  :hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+      0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+    transform: translateY(-2px);
+  }
+  :active {
+    box-shadow: inset 0px 3px 7px #3c4fe0;
+    transform: translateY(2px);
+  }
+}
+
+.download-button:hover {
+  background-color: #0675eb;
+}
+
+.option-6 {
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%),
+    inset 0px -3px 0px rgb(58 65 111 / 50%);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+body {
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+    repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+
+  animation: bg-scrolling-reverse 0.92s infinite;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}

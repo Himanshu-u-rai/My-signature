@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signature Pad</title>
+    <link rel="stylesheet" href="signature.css" />
+  </head>
+  <body>
+    <div class="one">
+      <h1>My Signature</h1>
+    </div>
+    <div class="container">
+      <div class="canvas-container">
+        <canvas id="signatureCanvas" width="800" height="400"></canvas>
+      </div>
+      <div class="options">
+        <div class="option-1">
+          <label for="textColor">Text Color:</label>
+          <input type="color" id="textColor" value="#000000" />
+        </div>
+        <br />
+        <div class="option-2">
+          <label for="bgColor">Background Color:</label>
+          <input type="color" id="bgColor" value="#ffffff" />
+        </div>
+        <br />
+        <div class="option-3">
+          <label for="transparentBg">Transparent Background:</label>
+          <input type="checkbox" id="transparentBg" />
+        </div>
+        <br />
+        <div class="option-7">
+          <label for="signatureSize">Signature Size (px):</label>
+          <input type="number" id="signatureSize" value="1" min="1" />
+        </div>
+        <div class="option-4">
+          <label for="format">Download Format:</label>
+          <select id="format">
+            <option value="svg">SVG</option>
+            <option value="jpg">JPG</option>
+            <option value="png">PNG</option>
+          </select>
+        </div>
+        <br />
+        <div class="option-5">
+          <div class="button-row">
+            <button onclick="clearCanvas()">Clear</button>
+            <button onclick="saveSignature()">Save</button>
+          </div>
+        </div>
+        <br />
+        <div class="option-6">
+          <div class="download-button">
+            <a id="downloadLink" download="signature" class="download-button">
+              Download
+            </a>
+          </div>
+        </div>
+        <br /> 
+        </div>
+        
+      </div>
+    </div>
+    <script src="signature.js"></script>
+  </body>
+</html>
